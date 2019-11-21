@@ -1,9 +1,9 @@
 class CreateUsers < ActiveRecord::Migration[5.1]
-  def change
-    create_table :articles do |t|
-      t.string :title
-      t.string :content
-
+   def change
+      create_table :users do |t|
+        t.string :name 
+        t.tring :email 
+        t.string :password
+      end
     end
-  end
 end
