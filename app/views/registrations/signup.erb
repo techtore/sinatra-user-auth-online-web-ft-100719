@@ -1,10 +1,10 @@
 <h1>Sign Up Below:</h1>
 <form action="/registrations" method="POST">
-  Name:<input type="text" name="/registrations/#{@user.name}"><br>
-  Email:<input type="text" name="email"><br>
-  Password: <input type="text" name="name"><br>
+  Name:<input type="text" name="user[name]"><br>
+  Email:<input type="text" name="user[email]"><br>
+  Password: <input type="text" name="user[password]"><br>
   <input type="submit" value="Sign Up">
 </form>
- <input type="text" id="title" name="article[title]" value= "<%= @article.title %>">
+
 
 
