@@ -21,9 +21,9 @@ class ApplicationController < Sinatra::Base
    @user = User.new(name: params["name"], email: params["email"], password: params["password"])
     @user.save
     session[:user_id] = @user.id
-    
-
+  
     redirect '/users/home'
+    
     # handles POST request sent when user hits 'submit' on signup form. Code gets new user's info from params hash, creates new use, signs user in, and redirects to home
   end
 
