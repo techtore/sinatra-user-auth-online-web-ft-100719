@@ -49,10 +49,8 @@ class ApplicationController < Sinatra::Base
     # logs user out by clearing session hash
   end
 
-  get '/users/home' do
-
+   get '/users/home' do
     @user = User.find(session[:user_id])
     erb :'/users/home'
-    # renders user's homepage view
   end
 end
