@@ -35,9 +35,8 @@ class ApplicationController < Sinatra::Base
 
   post '/sessions' do
     puts params
-    @user = User.find_by(email: params[:email], password: params[:password])
-    if @user
-      session[:user_id] = @user.id
+   @user = User.find_by(email: params["email"], password: params["password"])
+     session[:user_id] = @user.id
       redirect '/users/home'
       # handles POST request sent when user hits 'submit' on signup form. Code grabs user infro from params hash, matches info against DB, if matched signs user in
     end
