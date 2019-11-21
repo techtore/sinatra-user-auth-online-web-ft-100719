@@ -24,7 +24,6 @@ class ApplicationController < Sinatra::Base
     
 
     redirect '/users/home'
-    puts params
     # handles POST request sent when user hits 'submit' on signup form. Code gets new user's info from params hash, creates new use, signs user in, and redirects to home
   end
 
