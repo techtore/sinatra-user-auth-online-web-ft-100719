@@ -1,8 +1,8 @@
 <h1>Sign Up Below:</h1>
-<form action="/registrations/<% @user.id %>" method="POST">
-  Name:<input type="text" name="user[name]"><br>
-  Email:<input type="text" name="user[email]"><br>
-  Password: <input type="text" name="user[password]"><br>
+<form action="/registrations" method="POST">
+  <p>Name:<input type="text" name="user[name]"></p><br>
+  <p>Email:<input type="text" name="user[email]"></p><br>
+  <p>Password: <input type="text" name="user[password]"></p><br>
   <input type="submit" value="Sign Up">
 </form>
 
