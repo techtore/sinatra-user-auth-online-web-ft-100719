@@ -39,8 +39,6 @@ class ApplicationController < Sinatra::Base
    @user = User.find_by(email: params["email"], password: params["password"])
      session[:user_id] = @user.id
       redirect '/users/home'
-      
-      # handles POST request sent when user hits 'submit' on signup form. Code grabs user info from params hash, matches info against DB, if matched signs user in
    end
 
   get '/sessions/logout' do
