@@ -40,7 +40,7 @@ class ApplicationController < Sinatra::Base
       redirect '/users/home'
       # handles POST request sent when user hits 'submit' on signup form. Code grabs user infro from params hash, matches info against DB, if matched signs user in
    end
-    redirect "sessions/login"
+    redirect 'sessions/login'
   end
     
 
